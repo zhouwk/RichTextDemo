@@ -26,11 +26,10 @@ class SpecialTextView: UITextView {
     }
     
     func setupUI() {
-        
-        // 除去左右边距
-        textContainer.lineFragmentPadding = 0
         // 除去上下边距(textContainerInset即使把左右设置为0，还是有左右边距的存在)
         textContainerInset = .zero
+        // 除去左右边距
+        textContainer.lineFragmentPadding = 0
         isEditable = false
         isScrollEnabled = false
         isSelectable = false

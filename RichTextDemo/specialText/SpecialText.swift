@@ -9,7 +9,6 @@
 import UIKit
 
 enum SpecilType {
-    case normal
     case username
     case pic
     case topic
@@ -18,7 +17,7 @@ enum SpecilType {
 
 class SpecialText: NSObject {
 
-    var type = SpecilType.normal
+    var type = SpecilType.username
     var range = NSMakeRange(0, 0)
     var text = ""
     var picName: String?

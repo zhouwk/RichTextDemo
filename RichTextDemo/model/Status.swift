@@ -125,7 +125,8 @@ class Status: NSObject {
                     color = UIColor.orange
                 case .url:
                     color = UIColor.green
-                default:
+                case .pic:
+                    // 本地没有这个图片，依然显示图片对应的文字
                     color = UIColor.black
                 }
                 let range = NSMakeRange(0, specialText.range.length)

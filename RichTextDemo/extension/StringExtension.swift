@@ -26,7 +26,8 @@ extension String {
     
     func match(pattern: String) -> [NSTextCheckingResult] {
         
-        guard let regular = try? NSRegularExpression(pattern: pattern, options: []) else {
+        guard let regular = try? NSRegularExpression(pattern: pattern,
+                                                     options: []) else {
             return []
         }
         let range = NSMakeRange(0, count)
