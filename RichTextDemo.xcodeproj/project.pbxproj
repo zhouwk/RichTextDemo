@@ -13,6 +13,7 @@
 		F4127F24215A14A50090FA5F /* SpecialTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4127F23215A14A50090FA5F /* SpecialTextView.swift */; };
 		F4127F26215A35FA0090FA5F /* SequenceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4127F25215A35FA0090FA5F /* SequenceExtension.swift */; };
 		F4127F28215A3D070090FA5F /* ElasticTopHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4127F27215A3D070090FA5F /* ElasticTopHUD.swift */; };
+		F4DB0DD5217EF38300E59CD3 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DB0DD4217EF38300E59CD3 /* Status.swift */; };
 		F4F74762214B8912003F7911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F74761214B8912003F7911 /* AppDelegate.swift */; };
 		F4F74764214B8912003F7911 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F74763214B8912003F7911 /* ViewController.swift */; };
 		F4F74767214B8912003F7911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F74765214B8912003F7911 /* Main.storyboard */; };
@@ -21,7 +22,6 @@
 		F4F74774214B8936003F7911 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F74773214B8936003F7911 /* StatusViewController.swift */; };
 		F4F74776214B932A003F7911 /* StatusTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F74775214B932A003F7911 /* StatusTableView.swift */; };
 		F4F74778214B9422003F7911 /* StatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F74777214B9422003F7911 /* StatusTableViewCell.swift */; };
-		F4F7477A214BB330003F7911 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F74779214BB330003F7911 /* Status.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +33,7 @@
 		F4127F23215A14A50090FA5F /* SpecialTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialTextView.swift; sourceTree = "<group>"; };
 		F4127F25215A35FA0090FA5F /* SequenceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtension.swift; sourceTree = "<group>"; };
 		F4127F27215A3D070090FA5F /* ElasticTopHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElasticTopHUD.swift; sourceTree = "<group>"; };
+		F4DB0DD4217EF38300E59CD3 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		F4F7475E214B8912003F7911 /* RichTextDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichTextDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F74761214B8912003F7911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4F74763214B8912003F7911 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		F4F74773214B8936003F7911 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		F4F74775214B932A003F7911 /* StatusTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableView.swift; sourceTree = "<group>"; };
 		F4F74777214B9422003F7911 /* StatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewCell.swift; sourceTree = "<group>"; };
-		F4F74779214BB330003F7911 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,15 +84,6 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
-		F48F3A2E216EFBF00056323D /* model */ = {
-			isa = PBXGroup;
-			children = (
-				F4F74779214BB330003F7911 /* Status.swift */,
-			);
-			name = model;
-			path = "New Group/model";
-			sourceTree = "<group>";
-		};
 		F48F3A2F216EFC2E0056323D /* specialText */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +119,14 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		F4DB0DD3217EF38300E59CD3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F4DB0DD4217EF38300E59CD3 /* Status.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		F4F74755214B8911003F7911 = {
 			isa = PBXGroup;
 			children = (
@@ -149,10 +148,10 @@
 		F4F74760214B8912003F7911 /* RichTextDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F4DB0DD3217EF38300E59CD3 /* model */,
 				F48F3A31216EFC6D0056323D /* extension */,
 				F48F3A30216EFC5C0056323D /* view */,
 				F48F3A2F216EFC2E0056323D /* specialText */,
-				F48F3A2E216EFBF00056323D /* model */,
 				F48F3A2D216EFBEA0056323D /* controller */,
 				F4F74761214B8912003F7911 /* AppDelegate.swift */,
 				F48F3A32216EFC7F0056323D /* lib */,
@@ -305,8 +304,8 @@
 				F4F74774214B8936003F7911 /* StatusViewController.swift in Sources */,
 				F4F74762214B8912003F7911 /* AppDelegate.swift in Sources */,
 				F4F74776214B932A003F7911 /* StatusTableView.swift in Sources */,
-				F4F7477A214BB330003F7911 /* Status.swift in Sources */,
 				F4127F28215A3D070090FA5F /* ElasticTopHUD.swift in Sources */,
+				F4DB0DD5217EF38300E59CD3 /* Status.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
